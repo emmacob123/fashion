@@ -57,7 +57,7 @@
                         timer: 3000,
                         showConfirmButton: false
                       }, function(){
-                            window.location.href = \"dashboard.php\";
+                            window.location.href = \"index.php\";
                       });
                       </script>";
                 } else {

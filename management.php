@@ -1,36 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php require_once "includes/header.php"?>
 
-<head>
-    <title>GURU Able - Free Lite Admin Template </title>
-    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="CodedThemes">
-    <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
-    <meta name="author" content="CodedThemes">
-    <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <!-- Google font-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-    <!-- Required Fremwork -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
-    <!-- themify-icons line icon -->
-    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
-    <!-- ico font -->
-    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
-    <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" href="index.css">
-</head>
 
 <body>
     <!-- Pre-loader start -->
@@ -152,6 +123,19 @@
                     <div class="pcoded-content">
                         <div class="pcoded-inner-content">
                             <div class="main-body">
+
+                            <div class="page-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Manage Customers</h4>
+
+                        <!-- Basic Form Inputs card start -->
+                        <div class="card">
+                            <div class="card-header">
+
+                                <div class="card-header-right">
+                                    <i class="icofont icofont-spinner-alt-5"></i>
+                                </div>
                                 <div class="page-wrapper">
 
                                     <div class="page-body">
@@ -163,6 +147,8 @@
                                                 <thead>
                                                     <th>Id</th>
                                                     <th>Name</th>
+                                                    <th>Phone number</th>
+                                                    <th>Email</th>
                                                     <th>Address</th>
                                                     <th>Date</th>
                                                     <th>Price</th>

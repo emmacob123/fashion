@@ -6,7 +6,7 @@
             <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Layout</div>
             <ul class="pcoded-item pcoded-left-item">
                 <li class="active">
-                    <a href="dashboard2.php">
+                    <a href="index.php">
                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Overview</span>
                         <span class="pcoded-mcaret"></span>
@@ -29,7 +29,7 @@
                 <li class="active">
                     <a href="management.php">
                         <span class="pcoded-micon"><i class="ti-user"></i><b>D</b></span>
-                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Customers Management</span>
+                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Manage Customers</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>

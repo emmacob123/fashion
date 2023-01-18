@@ -1,36 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php require_once "includes/header.php"?>
 
-<head>
-    <title>GURU Able - Free Lite Admin Template </title>
-    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="CodedThemes">
-    <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
-    <meta name="author" content="CodedThemes">
-    <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <!-- Google font-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-    <!-- Required Fremwork -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
-    <!-- themify-icons line icon -->
-    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
-    <!-- ico font -->
-    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
-    <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" href="index.css">
-</head>
 
 <body>
     <!-- Pre-loader start -->
@@ -152,6 +123,19 @@
                     <div class="pcoded-content">
                         <div class="pcoded-inner-content">
                             <div class="main-body">
+                            <div class="page-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Customer Measurement</h4>
+
+                        <!-- Basic Form Inputs card start -->
+                        <div class="card">
+                            <div class="card-header">
+
+                                <div class="card-header-right">
+                                    <i class="icofont icofont-spinner-alt-5"></i>
+                                </div>
+                                 <!-- Page body start -->
                                 <div class="page-wrapper">
 
                                     <div class="page-body">
@@ -159,23 +143,27 @@
                                             <div class="orders">
 
                                             </div>
-                                            <form>
-                                                                <div class="form-group row">                                                                    <div class="col-sm-10">
-                                                                        <input type="text" class="form-control" placeholder="Customer Name">
+                                            <form class="col-sm-12">
+                                                                <div class="form-group row">                                                                    
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" name="fullname" class="form-control" placeholder="Customer Name">
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group row">                                                                    <div class="col-sm-10">
-                                                                        <input type="tel" class="form-control"
+                                                                <div class="form-group row">                                                                    
+                                                                    <div class="col-sm-10">
+                                                                        <input type="tel" name="phone" class="form-control"
                                                                         placeholder="Phone Number">
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
-                                                                        <div class="col-sm-10">                                                                            <input type="email" class="form-control"
+                                                                        <div class="col-sm-10">                                                                           
+                                                                            <input type="email" class="form-control"
                                                                             placeholder="Email">
                                                                         </div>
                                                                     </div>
                                                                 <div class="form-group row">
-                                                                    <div class="col-sm-10">                                                                        <input type="password" class="form-control"
+                                                                    <div class="col-sm-10">                                                                        
+                                                                        <input type="password" class="form-control"
                                                                         placeholder="Password input">
                                                                     </div>
                                                                 </div>
@@ -186,71 +174,62 @@
                                                                                 </div>
                                                                             </div>
                                                                     <div class="form-group row">
-                                                                        <label class="col-sm-2 col-form-label">Select Box</label>
                                                                         <div class="col-sm-10">
                                                                             <select name="select" class="form-control">
-                                                                                <option value="opt1">Select One Value Only</option>
-                                                                                <option value="opt2">Type 2</option>
-                                                                                <option value="opt3">Type 3</option>
-                                                                                <option value="opt4">Type 4</option>
-                                                                                <option value="opt5">Type 5</option>
-                                                                                <option value="opt6">Type 6</option>
-                                                                                <option value="opt7">Type 7</option>
-                                                                                <option value="opt8">Type 8</option>
+                                                                                <option value="opt1">Choose Style</option>
+                                                                                <option value="opt2">Gown</option>
+                                                                                <option value="opt3">Ankara</option>
+                                                                                <option value="opt4">Skirt</option>
+                                                                                <option value="opt5">Plain Gown</option>
+                                                                                <option value="opt6">Top</option>
+                                                                                <option value="opt7">Butterfly</option>
+                                                                                <option value="opt8">Wedding Gown</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="form-group row">
-                                                                        <label class="col-sm-2 col-form-label">Round Input</label>
+                                                                    <div class="form-group row">                                                                        
                                                                         <div class="col-sm-10">
                                                                             <input type="text"
-                                                                            class="form-control form-control-round"
-                                                                            placeholder=".form-control-round">
+                                                                            class="form-control"
+                                                                            placeholder="Box">
                                                                         </div>
                                                                     </div>
-                                                                    <div class="form-group row">
-                                                                        <label class="col-sm-2 col-form-label">Maximum
-                                                                            Length</label>
-                                                                            <div class="col-sm-10">
+                                                                    <div class="form-group row">                                                                            
+                                                                        <div class="col-sm-10">
                                                                                 <input type="text" class="form-control"
-                                                                                placeholder="Content must be in 6 characters"
-                                                                                maxlength="6">
+                                                                                placeholder="Hand Lenght">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="form-group row">
-                                                                            <label class="col-sm-2 col-form-label">Disable
-                                                                                Autocomplete</label>
-                                                                                <div class="col-sm-10">
+                                                                        <div class="form-group row">                                                                                
+                                                                            <div class="col-sm-10">
                                                                                     <input type="text" class="form-control"
-                                                                                    placeholder="Autocomplete Off"
-                                                                                    autocomplete="off">
+                                                                                    placeholder="Sholder">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="form-group row">
-                                                                                <label class="col-sm-2 col-form-label">Static Text</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <div class="form-control-static">Hello !... This is
-                                                                                        static text
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label class="col-sm-2 col-form-label">Color</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <input type="color" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label class="col-sm-2 col-form-label">Upload File</label>
+                                                                            <div class="form-group row">                                                                                
                                                                                 <div class="col-sm-10">
                                                                                     <input type="file" class="form-control">
                                                                                 </div>
                                                                             </div>
-                                                                        </form>
+                                                                            <div class="card-block">                                                        <button type="button" class="btn btn-primary" id="primary-popover-content" data-container="body" data-toggle="popover" title="Primary color states" data-placement="bottom" data-content="<div class='color-code'>
+                                                            <div class='row'>
+                                                              <div class='col-sm-6 col-xs-12'>
+                                                                <span class='block'>Normal</span>
+                                                                <span class='block'>
+                                                                  <small>#4680ff</small>
+                                                              </span>
+                                                          </div>
+                                                          <div class='col-sm-6 col-xs-12'>
+                                                            <div class='display-color' style='background-color:#4680ff;'">Save</div>
+                                                        </div>
+                                                                            
+                                                              </form>
                                             <table class="table">
                                                 <thead>
                                                     <th>Id</th>
                                                     <th>Name</th>
+                                                    <th>Phone number</th>
+                                                    <th>Email</th>
                                                     <th>Address</th>
                                                     <th>Date</th>
                                                     <th>Price</th>
