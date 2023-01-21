@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once "includes/header.php"?>
-
+<?php require_once "includes/header.php";?>
+<?php require_once "includes/admin_measurement.php";?>
 
 <body>
     <!-- Pre-loader start -->
@@ -16,7 +16,7 @@
                 </div>
                 <div class="ring">
 
-                    <div class="frame"></div>
+                <div class="frame"></div>
                 </div>
                 <div class="ring">
                     <div class="frame"></div>
@@ -143,39 +143,33 @@
                                             <div class="orders">
 
                                             </div>
-                                            <form class="col-sm-12">
+                                            <form class="col-sm-12" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
                                                                 <div class="form-group row">                                                                    
                                                                     <div class="col-sm-10">
-                                                                        <input type="text" name="fullname" class="form-control" placeholder="Customer Name">
+                                                                        <input type="text" name="fullname" class="form-control" placeholder="Customer Name" required>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">                                                                    
                                                                     <div class="col-sm-10">
                                                                         <input type="tel" name="phone" class="form-control"
-                                                                        placeholder="Phone Number">
+                                                                        placeholder="Phone Number" required>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group row">
                                                                         <div class="col-sm-10">                                                                           
-                                                                            <input type="email" class="form-control"
-                                                                            placeholder="Email">
+                                                                            <input type="email" name="email" class="form-control"
+                                                                            placeholder="Email" >
                                                                         </div>
                                                                     </div>
                                                                 <div class="form-group row">
-                                                                    <div class="col-sm-10">                                                                        
-                                                                        <input type="password" class="form-control"
-                                                                        placeholder="Password input">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea rows="5" cols="5" class="form-control"
+                                                                                    <textarea rows="5" name="address" cols="5" class="form-control"
                                                                                     placeholder="Address"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-10">
-                                                                            <select name="select" class="form-control">
+                                                                            <select name="style" class="form-control" >
                                                                                 <option value="opt1">Choose Style</option>
                                                                                 <option value="opt2">Gown</option>
                                                                                 <option value="opt3">Ankara</option>
@@ -189,40 +183,67 @@
                                                                     </div>
                                                                     <div class="form-group row">                                                                        
                                                                         <div class="col-sm-10">
-                                                                            <input type="text"
+                                                                            <input type="text" name="burst"
                                                                             class="form-control"
-                                                                            placeholder="Box">
+                                                                            placeholder="Burst" >
                                                                         </div>
                                                                     </div>
+                                                                    <div class="form-group row">
+                                                                    <div class="col-sm-10">                                                                        
+                                                                        <input type="text" name="hip" class="form-control"
+                                                                        placeholder="Hip" >
+                                                                    </div>
+                                                                </div>
+                                                                  <div class="form-group row">
+                                                                    <div class="col-sm-10">                                                                        
+                                                                        <input type="text" name="skirt_length" class="form-control"
+                                                                        placeholder="Skirt Length" >
+                                                                    </div>
+                                                                </div>
+
+                                                                       <div class="form-group row">
+                                                                    <div class="col-sm-10">                                                                        
+                                                                        <input type="text" name="waist" class="form-control"
+                                                                        placeholder="Waist" >
+                                                                    </div>
+                                                                </div>
                                                                     <div class="form-group row">                                                                            
                                                                         <div class="col-sm-10">
-                                                                                <input type="text" class="form-control"
-                                                                                placeholder="Hand Lenght">
+                                                                                <input type="text" name="hand_lenght" class="form-control"
+                                                                                placeholder="Hand Lenght" >
                                                                             </div>
                                                                         </div>
                                                                         <div class="form-group row">                                                                                
                                                                             <div class="col-sm-10">
-                                                                                    <input type="text" class="form-control"
-                                                                                    placeholder="Sholder">
+                                                                                    <input type="text" name="sholder" class="form-control"
+                                                                                    placeholder="Sholder" >
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">                                                                                
+                                                                            <div class="col-sm-10">
+                                                                            <label for="">Recieve Date</label>
+                                                                                    <input type="date" name="recieve_date" class="form-control"
+                                                                                    placeholder="Date Recieve" >
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">                                                                                
+                                                                            <div class="col-sm-10">
+                                                                                <label for="">Collection Date</label>
+                                                                                    <input type="date" name="collection_date" class="form-control"
+                                                                                    placeholder="Collection Date" >
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group row">                                                                                
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="file" class="form-control">
+                                                                                    <input type="file" name="file" class="form-control" >
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="card-block">                                                        <button type="button" class="btn btn-primary" id="primary-popover-content" data-container="body" data-toggle="popover" title="Primary color states" data-placement="bottom" data-content="<div class='color-code'>
-                                                            <div class='row'>
-                                                              <div class='col-sm-6 col-xs-12'>
-                                                                <span class='block'>Normal</span>
-                                                                <span class='block'>
-                                                                  <small>#4680ff</small>
-                                                              </span>
-                                                          </div>
-                                                          <div class='col-sm-6 col-xs-12'>
-                                                            <div class='display-color' style='background-color:#4680ff;'">Save</div>
-                                                        </div>
-                                                                            
+                                                                            <div class="row m-t-4">
+                                                                            <div class="col-md-2">
+                                                                            <button name="btn" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Sign in</button>
+                                                                            </div>
+                                                                            </div>
+                                                                        </div>
                                                               </form>
                                             <table class="table">
                                                 <thead>
